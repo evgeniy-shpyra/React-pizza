@@ -1,0 +1,308 @@
+
+.shopping {
+    flex: 1 1 auto;
+    &__body {
+        padding: 58px 0px 131px 0px;
+        max-width: 820px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        
+        min-height: calc(100vh - 90px);
+ 
+        @media (max-width: $md3) {
+            padding: 10px 10px 50px 10px;
+            min-height: calc(100vh - 40px);
+            
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 0px 30px 0px;
+        border-bottom: 1px #F4F4F4 solid;
+        @media (max-width: $md3) {
+            flex-direction: column;
+            padding: 0px 0px 30px 0px;
+        }
+    }
+
+    &__label  {
+        display: flex;
+        align-items: center;
+        svg{
+            margin: 0px 8px 0px 0px;
+        }
+        @media (max-width: $md3) {
+            padding: 0px 0px 20px 0px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 0.01em;
+        color: #000000;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        color: #B6B6B6;
+        cursor: pointer;
+        svg{
+            margin: 0px 8px 0px 0px;
+            transition: all 0.2s ease;
+        }
+        transition: all 0.2s ease;
+        &:hover{
+            color: #838383;
+            svg{
+                stroke: #838383;
+            }
+        }
+        &:active{
+            color: #ababab;
+            svg{
+                stroke: #ababab;
+            }
+        }
+
+    }
+
+    &__img-trash-can {
+        padding: 0px 12px 0px 0px;
+    }
+
+    
+    &__pizzas {
+        padding: 0px 0px 10px 0px;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__pizza {
+        
+    }
+
+    &__footer {
+    }
+
+    
+}
+
+.selected-pizza {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+    border-bottom: 1px solid #F4F4F4;
+    
+    @media (max-width: $md3) {
+        flex-direction: column;
+    }
+    
+
+    &:last-child{
+        border-bottom: none;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        //justify-self: start;
+        flex: 0 0 50%;
+        
+    }
+
+    &__img-pizza {
+        height: 80px;
+        width: auto;
+        padding: 0px 15px 0px 0px;
+        @media (max-width: $md3) {
+            padding: 0px 30px 0px 0px;
+        }
+    }
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.01em;
+        color: #000000;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #8D8D8D;
+    }
+
+    &__settings {
+        flex: 0 1 380px;
+        padding: 0px 0px 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.01em;
+        color: #000000;
+        width: 100%;
+
+        @media (max-width: $md3) {
+            flex: 1 1 auto; 
+            padding: 15px 10px 0px 10px;
+            max-width: 400px;
+            
+        }
+        
+    }
+    &__selected-quantity {
+        display: flex;
+        align-items: center;
+
+        svg{
+            cursor: pointer;
+            &:hover {
+                stroke: #e75319; 
+                fill: #e75319;
+            }
+        
+            &:active {
+                stroke: #fc6f37; 
+                fill: #fc6f37;
+            }
+        }
+        span{
+            padding: 0px 12px;
+        }
+    }
+
+    &__cost {
+        padding: 0px 12px;
+    }
+    &__dagger{
+        svg{
+            cursor: pointer;
+            transition: all 0.2s ease;
+            &:hover{
+                fill: #c1c1c1;
+                stroke: #c1c1c1;
+            }
+            &:active{
+                stroke: #dddddd;  
+            }
+        }
+    }
+   
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+
+    &__minus {
+        cursor: pointer;
+    }
+
+    &__quantity {
+        padding: 0px 12px;
+    }
+
+    &__plus {
+        cursor: pointer;
+    }
+}
+
+
+
+.total-info {
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 0px 40px 0px;
+        
+        @media (max-width: $md3) {
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 0px 30px 0px;
+        }
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.01em;
+        color: #000000;
+
+        span{
+            padding: 0px 0px 0px 5px;
+            font-weight: 700;
+        }
+
+        @media (max-width: $md3) {
+            padding: 0px 0px 10px 0px;
+        }
+    }
+
+
+    &__btn{
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            padding: 0px 0px 0px 8px;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: space-between;
+        
+        @media (max-width: $md3) {
+            flex-direction: column-reverse;
+        }
+        
+    }
+    &__container-btn{
+        display: flex;
+        justify-content: center;
+        @media (max-width: $md3) {
+            &:last-child{
+                margin: 0px 0px 20px 0px;
+            }
+        }
+        
+    }
+}
+
+.btn-go-to {    
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 18px 30px;
+    cursor: pointer;
+    &__arrow {
+        padding: 0px 6px 0px 0px;
+    }
+}
+

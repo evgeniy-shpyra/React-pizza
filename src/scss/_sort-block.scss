@@ -1,0 +1,135 @@
+@import '_form';
+
+
+.sort-block {
+    padding: 0px 0px 27.5px 0px;
+    
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media (max-width: 852px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__nav-list {
+        padding: 0px 0px 20px 0px;
+    }
+
+
+    &__sort-popup {
+        
+    }
+
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $md3) {
+        margin: 0px 0px 23px 0px;
+    }
+    
+
+    li {
+        cursor: pointer;
+        background: #F9F9F9;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.015em;
+        color: #2C2C2C;
+        border-radius: 30px;
+        padding: 14px 23px;
+        margin: 4.5px 9px 4.5px 0px;
+
+        &.active {
+            background: #282828;
+            color: #fff;
+        }
+    }
+}
+
+
+
+.sort-popup {
+
+    display: flex;
+    position: relative;
+    
+
+
+    margin: 0px 0px 0px 40px;
+    @media (max-width: $md3) {
+        margin: 0px 0px 0px 23px;
+        //padding: 20px 0px 0px 0px;
+    }
+    &::before {
+
+        content: ''; 
+        position: absolute;
+        transition: all 0.2s ease;
+        left: -17px;            
+        border: 5px solid transparent; 
+        border-top: 5px solid #2C2C2C; /* Добавляем треугольник */
+        top: calc(50% - 2.5px); 
+        
+        
+    }
+    &.sort-popup-visible{
+        &::before{
+            transform: rotate(180deg);
+            top: 0;  
+        }
+    }
+
+    &__sort-by {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.015em;
+        color: #FE5F1E;
+        margin: 0px 0px 0px 8px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__list {
+        position: absolute;
+        top: 27px;
+        right: 0px;
+        padding: 13px 0px; 
+        background: #FFFFFF;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        li{
+            cursor: pointer;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.015em;
+            color: #000000;
+            padding: 10px 13px;
+            transition: all 0.2s ease;
+
+            &:hover{
+                background: rgba(254, 95, 30, 0.03);
+            }
+
+            &.active {
+                color: #FE5F1E;
+                font-weight: 700;
+                background: rgba(254, 95, 30, 0.05);
+            }
+        }
+    }
+
+    
+}

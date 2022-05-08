@@ -1,0 +1,109 @@
+.button {
+    height: 50px;
+    padding: 0px 18px;
+    border-radius: 30px;
+    background-color: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.orange-btn {
+    background: #FE5F1E;
+    color: #fff;
+    svg{
+        margin: 0px 8px 0px 0px;
+    }
+    &:hover {
+        background-color: #e75319;
+    }
+
+    &:active {
+        background: #fc6f37;
+    }
+}
+
+.orange-outline-btn {
+    background: none;
+    border: 1px #FE5F1E solid;
+    color: #FE5F1E;
+
+    svg{
+        margin: 0px 8px 0px 0px;
+        fill: #FE5F1E;
+    }
+
+    &:hover {
+        background-color: #FE5F1E;
+        color: #fff;
+        & .quantity {
+            background: #fff;   
+            color: #FE5F1E; 
+        } 
+        svg{
+            margin: 0px 8px 0px 0px;
+            fill: #fff;
+        }
+    }
+
+    &:active {
+        background: #fc6f37;
+    }
+}
+
+.black-btn {
+    background: #282828;
+    color: #fff;
+
+    &:hover {
+        background-color: #000000;
+    }
+
+    &:active {
+        background: #474747;
+    }
+}
+
+.gray-btn {
+    background: #F9F9F9;
+    color: #2C2C2C;
+
+    &:hover {
+        background-color: #e3e3e3;
+    }
+
+    &:active {
+        background: #efefef;
+    }
+
+    &_active {
+        background: #282828;
+        color: #fff;
+    }
+}
+
+.gray-outline-btn {
+    background: none;
+    border: 1px #D3D3D3 solid;
+    color: #D3D3D3;
+
+    &:hover {
+        background: #282828;
+        color: #fff;
+        border-color: #282828;
+        svg{
+            path{
+                stroke: #fff;
+            }
+        }
+    }
+
+    &:active {
+        background: #373737;
+    }
+}
