@@ -1,5 +1,5 @@
 import React from 'react';
-import emptyCart from '../../img/empty-cart/empty-cart.png'
+import emptyCart from '../../img/empty-cart.png'
 import Button from './../Button';
 import { NavLink } from 'react-router-dom';
 
