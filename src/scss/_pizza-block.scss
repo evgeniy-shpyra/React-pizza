@@ -38,8 +38,6 @@
         line-height: 24px;
         letter-spacing: 0.01em;
         color: #000000;
-        
-        //white-space: nowrap;
     }
 
     &__selector-block {
@@ -86,6 +84,7 @@
             &.big {
                 li{
                     flex: 0 1 50%;
+                    
                 }
             }
             
@@ -107,6 +106,10 @@
                 letter-spacing: 0.015em;
                 cursor: pointer;
                 padding: 12px 0px 12px 0px; 
+
+                @media (max-width: $md3) {
+                    cursor: none;
+                }
                 
                 &:hover{    
                     background: rgba(255, 255, 255, 0.5);

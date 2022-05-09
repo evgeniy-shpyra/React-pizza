@@ -45,6 +45,9 @@
         border-radius: 30px;
         padding: 14px 23px;
         margin: 4.5px 9px 4.5px 0px;
+        @media (max-width: $md3) {
+            cursor: none;
+        }
 
         &.active {
             background: #282828;
@@ -95,6 +98,9 @@
         margin: 0px 0px 0px 8px;
         position: relative;
         cursor: pointer;
+        @media (max-width: $md3) {
+            cursor: none;
+        }
     }
 
     &__list {
@@ -118,6 +124,10 @@
             color: #000000;
             padding: 10px 13px;
             transition: all 0.2s ease;
+
+            @media (max-width: $md3) {
+                cursor: none;
+            }
 
             &:hover{
                 background: rgba(254, 95, 30, 0.03);

@@ -11,6 +11,9 @@
     align-items: center;
     user-select: none;
     cursor: pointer;
+    @media (max-width: $md3) {
+        cursor: none;
+    }
 }
 
 .orange-btn {

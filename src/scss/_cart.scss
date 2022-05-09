@@ -55,6 +55,9 @@
         font-size: 16px;
         color: #B6B6B6;
         cursor: pointer;
+        @media (max-width: $md3) {
+            cursor: none;
+        }
         svg{
             margin: 0px 8px 0px 0px;
             transition: all 0.2s ease;
@@ -117,7 +120,6 @@
     &__content {
         display: flex;
         align-items: center;
-        //justify-self: start;
         flex: 0 0 50%;
         
     }
@@ -175,6 +177,9 @@
 
         svg{
             cursor: pointer;
+            @media (max-width: $md3) {
+                cursor: none;
+            }
             &:hover {
                 stroke: #e75319; 
                 fill: #e75319;
@@ -197,6 +202,10 @@
         svg{
             cursor: pointer;
             transition: all 0.2s ease;
+
+            @media (max-width: $md3) {
+                cursor: none;
+            }
             &:hover{
                 fill: #c1c1c1;
                 stroke: #c1c1c1;
@@ -207,23 +216,6 @@
         }
     }
    
-}
-
-.quantity {
-    display: flex;
-    align-items: center;
-
-    &__minus {
-        cursor: pointer;
-    }
-
-    &__quantity {
-        padding: 0px 12px;
-    }
-
-    &__plus {
-        cursor: pointer;
-    }
 }
 
 
@@ -301,6 +293,9 @@
     border-radius: 30px;
     padding: 18px 30px;
     cursor: pointer;
+    @media (max-width: $md3) {
+        cursor: none;
+    }
     &__arrow {
         padding: 0px 6px 0px 0px;
     }
